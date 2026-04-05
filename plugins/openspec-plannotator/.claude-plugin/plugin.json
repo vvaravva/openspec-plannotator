@@ -1,0 +1,7 @@
+{
+  "name": "openspec-plannotator",
+  "description": "Auto-opens Plannotator for visual review after OpenSpec generates change artifacts (design, specs, tasks)",
+  "author": {
+    "name": "vvaravva"
+  }
+}

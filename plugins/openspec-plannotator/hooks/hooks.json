@@ -1,0 +1,27 @@
+{
+  "description": "Opens Plannotator annotate UI after OpenSpec writes change artifacts",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/flag-openspec-write.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ${CLAUDE_PLUGIN_ROOT}/hooks/open-plannotator.sh",
+            "timeout": 345600
+          }
+        ]
+      }
+    ]
+  }
+}
