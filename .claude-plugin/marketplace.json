@@ -1,0 +1,17 @@
+{
+  "name": "openspec-plannotator",
+  "description": "Auto-opens Plannotator for visual review after OpenSpec generates change artifacts",
+  "owner": {
+    "name": "vvaravva"
+  },
+  "plugins": [
+    {
+      "name": "openspec-plannotator",
+      "description": "Auto-opens Plannotator for visual review after OpenSpec generates change artifacts (design, specs, tasks)",
+      "source": "./plugins/openspec-plannotator",
+      "version": "0.1.0",
+      "category": "development",
+      "tags": ["openspec", "plannotator", "review"]
+    }
+  ]
+}
